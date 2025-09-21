@@ -1,0 +1,25 @@
+function suma(a, b) {
+  return a + b;
+}
+function resta(a, b) {
+  return a - b;
+}
+function multiplicacion(a, b) {
+  return a * b;
+}
+function division(a, b) {
+  if (b === 0) {
+    return null; // indica error
+  }
+  return a / b;
+}
+
+// Usar las funciones:
+const a = 2;
+const b = 3;
+
+console.log(`La suma es ${suma(a, b)}`);
+console.log(`La resta es ${resta(a, b)}`);
+console.log(`La multiplicación es ${multiplicacion(a, b)}`);
+const div = division(a, b);
+console.log(div === null ? "Error: división entre 0" : `La división es ${div}`);
